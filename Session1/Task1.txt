@@ -1,0 +1,62 @@
+step 1
+
+mkdir "Aya Mohamed"
+cd "Aya Mohamed"
+
+step2 
+
+mkdir Documents
+cd Documents
+touch file1.txt file2.txt file3.txt 
+ls
+
+step3 
+
+cd ..
+touch .hidden_file
+ls -a
+
+
+step4
+
+cd Documents 
+nano file1.txt 
+ctrl+o and enter and ctrl+x
+cat file1.txt 
+
+step5
+
+cd Documents
+
+step6
+
+mkdir -
+pwd
+cd /home/osc/Desktop/"Aya Mohamed"/Documents/-
+
+step7
+
+cd ..
+cd ..
+cp -r Documents My_Documents
+ls
+
+step8
+
+cat .hidden_file
+nano .hidden_file
+cat .hidden_file
+
+step9
+
+cd Documents 
+mv file2.txt file3.txt /home/osc/Desktop/"Aya Mohamed"/
+cd ..
+ls
+
+step10
+
+cd .. 
+rm -r "Aya Mohamed"
+ls
+
