@@ -1,0 +1,52 @@
+Step 1
+
+cd Desktop
+sudo useradd -m OSC
+sudo passwd OSC
+sudo groupadd OSC_group
+sudo usermod -aG OSC_group OSC
+sudo usermod -aG sudo OSC
+groups OSC
+su - OSC
+bash
+whoami
+
+
+Step2
+
+
+mkdir permission_practice
+cd permission_practice
+touch public_file.txt private_file.txt executable_script.sh
+ls -l
+chmod 666 public_file.txt
+chmod 600 private_file.txt
+chmod 750 executabel_script.sh
+ls -l
+
+
+Step3
+
+
+sudo chown osc:OSC_group private_file.txt
+ls -l
+
+
+Step4
+
+sleep 1000 &
+kill 24796
+vim
+pkill -9 vim
+pgrep sleep
+pgrep vim
+
+
+Step5
+
+
+sudo apt update
+sudo apt install neofetch
+dpkg --list
+sudo apt remove neofetch
+
